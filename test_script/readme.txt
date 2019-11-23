@@ -14,3 +14,7 @@ mac(32-bit and 64-bit)
 If libASICamera2.so or (.dylib) can't be found at run time, resolve by below two ways:
 1.Add a .conf file that contains the path of the library to /etc/ld.so.conf.d/, run ldconfig.
 2.Add compile option -Wl,-rpath=<library path>
+
+
+Install opencv2 on ubuntu system with:
+sudo apt-get install libopencv-dev
