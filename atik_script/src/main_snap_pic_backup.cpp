@@ -23,20 +23,9 @@ void cvText(IplImage* img, const char* text, int x, int y)
 
 static unsigned long GetTickCount()
 {
-
-#ifdef _MAC
-
-	struct timeval  now;
-    gettimeofday(&now, NULL);
-    unsigned long ul_ms = now.tv_usec/1000 + now.tv_sec*1000;
-    return ul_ms;
-
-#else
    struct timespec ts;
    clock_gettime(CLOCK_MONOTONIC,&ts);
    return (ts.tv_sec*1000 + ts.tv_nsec/(1000*1000));
-#endif
-
 }
 int bDisplay = 0;
 int bMain = 1;
@@ -55,7 +44,7 @@ void* Display(void* params)
 	while(bDisplay)
 	{
 		cvShowImage("video", pImg);
-		
+
 		char c=cvWaitKey(1);
 		switch(c)
 		{
@@ -63,7 +52,7 @@ void* Display(void* params)
 			bDisplay = false;
 			bMain = false;
 			goto END;
-			
+
 			case 'i'://space
 			bChangeFormat = true;
 			change = change_imagetype;
@@ -106,9 +95,9 @@ int  main()
 	char buf[128]={0};
 
 	int CamNum=0;
-	
 
-	IplImage *pRgb;
+
+	IplImage *pRgb; // OpenCV
 
 	int numDevices = ASIGetNumOfConnectedCameras();
 	if(numDevices <= 0)
@@ -121,7 +110,7 @@ int  main()
 		printf("attached cameras:\n");
 
 	ASI_CAMERA_INFO ASICameraInfo;
-	
+
 
 	for(i = 0; i < numDevices; i++)
 	{
@@ -154,7 +143,7 @@ int  main()
 		printf("Color Camera: bayer pattern:%s\n",bayer[ASICameraInfo.BayerPattern]);
 	else
 		printf("Mono camera\n");
-	
+
 	ASI_CONTROL_CAPS ControlCaps;
 	int iNumOfCtrl = 0;
 	ASIGetNumOfControls(CamNum, &iNumOfCtrl);
@@ -190,12 +179,14 @@ int  main()
 
 	ASIGetROIFormat(CamNum, &width, &height, &bin, (ASI_IMG_TYPE*)&Image_type);
 	int displayWid = 1280, displayHei = 960;
+	// OpenCV
 	if(Image_type == ASI_IMG_RAW16)
 		pRgb=cvCreateImage(cvSize(displayWid, displayHei), IPL_DEPTH_16U, 1);
 	else if(Image_type == ASI_IMG_RGB24)
 		pRgb=cvCreateImage(cvSize(displayWid, displayHei), IPL_DEPTH_8U, 3);
 	else
 		pRgb=cvCreateImage(cvSize(displayWid, displayHei), IPL_DEPTH_8U, 1);
+	// OpenCV
 
 	long imgSize = width*height*(1 + (Image_type==ASI_IMG_RAW16));
 	long displaySize = displayWid*displayHei*(1 + (Image_type==ASI_IMG_RAW16));
@@ -208,10 +199,10 @@ int  main()
 	scanf("%d", &exp_ms);
 	ASISetControlValue(CamNum, ASI_EXPOSURE, exp_ms*1000, ASI_FALSE);
 	ASISetControlValue(CamNum, ASI_BANDWIDTHOVERLOAD, 40, ASI_FALSE);
-	
 
 
-	
+
+
 
 	bDisplay = 1;
 #ifdef _LIN
@@ -233,22 +224,22 @@ int  main()
 	while(bMain)
 	{
 
-		
+
 		ASIStartExposure(CamNum, ASI_FALSE);
 		usleep(10000);//10ms
 		status = ASI_EXP_WORKING;
 		while(status == ASI_EXP_WORKING)
 		{
-			ASIGetExpStatus(CamNum, &status);		
+			ASIGetExpStatus(CamNum, &status);
 		}
 		if(status == ASI_EXP_SUCCESS)
 		{
 			ASIGetDataAfterExp(CamNum, imgBuf, imgSize);
 			// sprintf(szTemp, "saveImage%d.jpg", bMain);
-			
+
 			if(Image_type==ASI_IMG_RAW16)
 			{
-				unsigned short *pCv16bit = (unsigned short *)(pRgb->imageData);
+				unsigned short *pCv16bit = (unsigned short *)(pRgb->imageData); // OpenCV
 				unsigned short *pImg16bit = (unsigned short *)imgBuf;
 				for(int y = 0; y < displayHei; y++)
 				{
@@ -258,7 +249,7 @@ int  main()
 				}
 			}
 			else{
-				unsigned char *pCv8bit = (unsigned char *)pRgb->imageData;
+				unsigned char *pCv8bit = (unsigned char *)pRgb->imageData; // OpenCV
 				unsigned char *pImg8bit = (unsigned char *)imgBuf;
 				for(int y = 0; y < displayHei; y++)
 				{
@@ -267,50 +258,53 @@ int  main()
 					pImg8bit+=width;
 				}
 			/*	if(bSave)
-   					cvSaveImage("saveImage.jpg", pRgb);
+   					cvSaveImage("saveImage.jpg", pRgb); // OpenCV
 				bSave = false;*/
 			}
-					
+
 		}
-//			ASIGetDataAfterExp(CamNum, (unsigned char*)pRgb->imageData, pRgb->imageSize);
-	
+//			ASIGetDataAfterExp(CamNum, (unsigned char*)pRgb->imageData, pRgb->imageSize); // OpenCV
+
 		time2 = GetTickCount();
 		count++;
-		
+
 		if(time2-time1 > 1000 )
 		{
-			ASIGetDroppedFrames(CamNum, &iDropped);			
+			ASIGetDroppedFrames(CamNum, &iDropped);
 
 			count = 0;
-			time1=GetTickCount();	
+			time1=GetTickCount();
 			printf("fps:%d dropped frames:%d ImageType:%d\n",count, iDropped, Image_type);
-	
+
 
 		}
+
+		// OpenCV
 		if(Image_type != ASI_IMG_RGB24 && Image_type != ASI_IMG_RAW16)
 		{
 			iStrLen = strlen(buf);
 			CvRect rect = cvRect(iTextX, iTextY - 15, iStrLen* 11, 20);
 			cvSetImageROI(pRgb , rect);
-			cvSet(pRgb, CV_RGB(180, 180, 180)); 
+			cvSet(pRgb, CV_RGB(180, 180, 180));
 			cvResetImageROI(pRgb);
 		}
 		cvText(pRgb, buf, iTextX,iTextY );
+		// OpenCV
 
 		if(bChangeFormat)
 		{
 			bChangeFormat = 0;
 			bDisplay = false;
 			pthread_join(thread_display, &retval);
-			cvReleaseImage(&pRgb);
-			
+			cvReleaseImage(&pRgb); // OpenCV
+
 			switch(change)
 			{
 				 case change_imagetype:
 					Image_type++;
 					if(Image_type > 3)
 						Image_type = 0;
-					
+
 					break;
 				case change_bin:
 					if(bin == 1)
@@ -319,7 +313,7 @@ int  main()
 						width/=2;
 						height/=2;
 					}
-					else 
+					else
 					{
 						bin = 1;
 						width*=2;
@@ -333,9 +327,9 @@ int  main()
 						height/= 2;
 					}
 					break;
-				
+
 				case change_size_bigger:
-				
+
 					if(width*2*bin <= iMaxWidth && height*2*bin <= iMaxHeight)
 					{
 						width*= 2;
@@ -345,18 +339,22 @@ int  main()
 			}
 			ASISetROIFormat(CamNum, width, height, bin, (ASI_IMG_TYPE)Image_type);
 			ASIGetROIFormat(CamNum, &width, &height, &bin, (ASI_IMG_TYPE*)&Image_type);
+
+			// OpenCV
 			if(Image_type == ASI_IMG_RAW16)
 				pRgb=cvCreateImage(cvSize(width,height), IPL_DEPTH_16U, 1);
 			else if(Image_type == ASI_IMG_RGB24)
 				pRgb=cvCreateImage(cvSize(width,height), IPL_DEPTH_8U, 3);
 			else
 				pRgb=cvCreateImage(cvSize(width,height), IPL_DEPTH_8U, 1);
+			// OpenCV
+
 			bDisplay = 1;
 			pthread_create(&thread_display, NULL, Display, (void*)pRgb);
 		}
 	}
 END:
-	
+
 	if(bDisplay)
 	{
 		bDisplay = 0;
@@ -366,7 +364,7 @@ END:
 		Sleep(50);
 #endif
 	}
-	
+
 	ASIStopExposure(CamNum);
 	ASICloseCamera(CamNum);
 	cvReleaseImage(&pRgb);
@@ -375,9 +373,3 @@ END:
 	printf("main function over\n");
 	return 1;
 }
-
-
-
-
-
-
