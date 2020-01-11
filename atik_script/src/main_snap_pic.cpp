@@ -10,6 +10,9 @@
 #include "display.h"
 #endif
 
+const uint HEIGHT = 100;
+const uint WIDTH = 100;
+
 // Initilize the camera and display information about that camera
 int initilize_camera()
 {
@@ -80,15 +83,10 @@ int initilize_camera()
 
 // Sets the camera parameters to the appropiate values
 void setup_camera(int cam_num) {
-	int bin = 1, width=100, height=100;
+	int bin = 1;
 	ASI_IMG_TYPE image_type = ASI_IMG_RAW8;
-	if (ASI_SUCCESS == ASISetROIFormat(cam_num, width, height, bin, image_type) )
-		printf("\nSet ROI image format success width:%d height:%d bin:%d image_type:%d \n", width, height, bin, image_type);
-
-// Used later I think
-	long imgSize = width*height*(1 + (image_type==ASI_IMG_RAW16));
-	unsigned char* imgBuf = new unsigned char[imgSize];
-// Used later I think
+	if (ASI_SUCCESS == ASISetROIFormat(cam_num, WIDTH, HEIGHT, bin, image_type) )
+		printf("\nSet ROI image format success width:%d height:%d bin:%d image_type:%d \n", WIDTH, HEIGHT, bin, image_type);
 
 	int gain = 0;
 	if (ASI_SUCCESS == ASISetControlValue(cam_num, ASI_GAIN, gain, ASI_FALSE) )
@@ -104,10 +102,37 @@ void setup_camera(int cam_num) {
 
 }
 
-void start_exposure() {return;}
-void wait_until_done() {return;}
-void get_img() {return;}
-void clean_up() {return;}
+void start_exposure(int CamNum) {
+	ASIStartExposure(CamNum, ASI_FALSE);
+}
+
+void wait_until_done(int CamNum, uint sleep_time) {
+	usleep(sleep_time);
+	ASI_EXPOSURE_STATUS status;
+	while(ASIGetExpStatus(CamNum, &status) == ASI_EXP_WORKING) {} // Do nothing
+}
+
+void get_img(int CamNum, long imgSize, unsigned char* imgBuf) {
+	ASIGetDataAfterExp(CamNum, imgBuf, imgSize);
+
+	// Save the binary data
+	FILE *fptr;
+	fptr = fopen("binary_image.bin","wb");
+	if(fptr == NULL) {
+	  printf("Error! Printing binary image\n");
+	} else {
+		fwrite(imgBuf, imgSize, 1, fptr);
+	}
+
+	fclose(fptr);
+}
+
+void clean_up(int CamNum, unsigned char* imgBuf) {
+	printf("Finished processing image\n");
+	free(imgBuf);
+	ASIStopExposure(CamNum);
+	ASICloseCamera(CamNum);
+}
 
 int main() {
 	int cam_num = initilize_camera();
@@ -116,13 +141,16 @@ int main() {
 
 	setup_camera(cam_num);
 
-// @TODO: all this stuff below (and write display.cpp)
-	start_exposure();
-	wait_until_done();
-	get_img();
+	start_exposure(cam_num);
+	wait_until_done(cam_num, 10*1000); // 10ms (as set in setup_camera() )
+
+	long imgSize = WIDTH*HEIGHT*2; // times 2 because image is ASI_IMG_RAW16 type
+	unsigned char* imgBuf = (unsigned char*) malloc(imgSize);
+	get_img(cam_num, imgSize, imgBuf);
+
 #ifdef GUI
-	display_img();
+	display_img(WIDTH, HEIGHT, (unsigned short *)imgBuf);
 #endif
 
-	clean_up();
+	clean_up(cam_num, imgBuf);
 }

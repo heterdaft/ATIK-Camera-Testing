@@ -5,7 +5,7 @@ CC = g++
 #INCLIB = /usr/local/include
 #LDLIB = /usr/local/lib
 OPENCV_COMPATIBILITY = --static -lzlib
-OPENCV = -lopencv_core -lopencv_highgui -lopencv_imgproc#$(shell pkg-config --cflags opencv) $(shell pkg-config --libs opencv) -I/usr/include/opencv2
+OPENCV = -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_imgcodecs#$(shell pkg-config --cflags opencv) $(shell pkg-config --libs opencv) -I/usr/include/opencv2
 #USB =  -I../libusb/include  -L../libusb/$(platform) -lusb-1.0
 
 
@@ -67,7 +67,7 @@ objects = main_snap_pic.o display.o
 
 all: test_snap_pic.o
 	mkdir -p bin/$(platform)/
-	$(CC)  -o bin/$(platform)/test_snap_pic main_snap_pic.o $(CFLAGS) $(OPENCV) -lASICamera2 $(ATIK_library)
+	$(CC)  -o bin/$(platform)/test_snap_pic.out main_snap_pic.o $(CFLAGS) $(OPENCV) -lASICamera2 $(ATIK_library)
 
 test_snap_pic.o:src/main_snap_pic.cpp
 	mkdir -p bin/$(platform)/
@@ -76,7 +76,7 @@ test_snap_pic.o:src/main_snap_pic.cpp
 GUI_FLAG = -Dcpp_variable=GUI
 gui: test_snap_pic.o gui.o
 	mkdir -p bin/$(platform)/
-	$(CC) -o bin/$(platform)/gui $(objects) $(CFLAGS) $(OPENCV) -lASICamera2 $(ATIK_library)
+	$(CC) -o bin/$(platform)/gui.out $(objects) $(CFLAGS) $(OPENCV) -lASICamera2 $(ATIK_library)
 
 gui.o:src/display.cpp
 	mkdir -p bin/$(platform)/

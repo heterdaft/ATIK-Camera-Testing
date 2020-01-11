@@ -18,3 +18,6 @@ If libASICamera2.so or (.dylib) can't be found at run time, resolve by below two
 
 Install opencv2 on ubuntu system with:
 sudo apt-get install libopencv-dev
+
+To build this app to save binary only build with "make"
+To build this app to also save a JPG build with "make gui"
