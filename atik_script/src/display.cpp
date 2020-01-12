@@ -1,19 +1,22 @@
 #include "stdio.h"
+#include "opencv2/highgui/highgui.hpp"
 #include "opencv2/highgui/highgui_c.h"
+#include <opencv2/imgproc/imgproc.hpp>
 #include "ASICamera2.h"
 #include <unistd.h>
 
-void display (uint width, uint height, unsigned short* pImg16bit) {
-	int displayWid = 1280, displayHei = 960;
-	IplImage *pRgb;
-	pRgb=cvCreateImage(cvSize(displayWid, displayHei), IPL_DEPTH_16U, 1);
-	unsigned short *pCv16bit = (unsigned short *)(pRgb->imageData); // OpenCV
+using namespace cv;
 
-	for(int y = 0; y < displayHei; y++)
-	{
-		memcpy(pCv16bit, pImg16bit, displayWid*2);
-		pCv16bit+=displayWid;
-		pImg16bit+=width;
-	}
-	cvSaveImage("jpg_image.jpg", pRgb); // OpenCV
+void display_img(uint width, uint height, void* pImg8bit) {
+	int displayWid = 1280, displayHei = 960;
+	printf("create img\n");
+	Mat img8uc1(width, height, CV_8UC1, pImg8bit);
+	Mat img_scaled8uc1;
+
+	printf("Created image matrices\n");
+	resize(img8uc1, img_scaled8uc1, Size(displayWid, displayHei), 0, 0, INTER_CUBIC);
+
+	printf("Save img\n");
+	imwrite("jpg_image_scaled.jpg", img_scaled8uc1);
+	imwrite("jpg_image.jpg", img8uc1);
 }

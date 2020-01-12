@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# Compiled images
+atik_script/bin/x64/*.jpg
+atik_script/bin/x64/*.bin

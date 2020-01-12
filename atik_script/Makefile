@@ -1,6 +1,6 @@
 ver = debug
 platform = x64
-
+directory = $(shell pwd)
 CC = g++
 #INCLIB = /usr/local/include
 #LDLIB = /usr/local/lib
@@ -10,16 +10,20 @@ OPENCV = -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_imgcodecs#$(sh
 
 
 # Library path and includes path for atik camera SDK
-LIBSPATH = -L../atik_libraries/$(platform) -Iinclude
+DEVELOPMENT_LIBRARY_PATH = $(directory)/../atik_libraries/$(platform)
+LIBSPATH = -L$(DEVELOPMENT_LIBRARY_PATH) -Iinclude
 
+DEVELOPMENT_LIBRARY_LINK = -Wl,-rpath=$(DEVELOPMENT_LIBRARY_PATH)
 
 
 ifeq ($(ver), debug)
 DEFS = -D_LIN -D_DEBUG
-CFLAGS = -g  -I $(INCLIB) -L $(LDLIB) $(DEFS) $(COMMON) $(LIBSPATH)  -lpthread  -DGLIBC_20
+CFLAGS = -g  -I $(INCLIB) -L $(LDLIB) $(DEFS) $(COMMON) $(LIBSPATH)  -lpthread \
+ -DGLIBC_20 $(DEVELOPMENT_LIBRARY_LINK)
 else
 DEFS = -D_LIN
-CFLAGS =  -O3 -I $(INCLIB) -L $(LDLIB) $(DEFS) $(COMMON) $(LIBSPATH)  -lpthread  -DGLIBC_20
+CFLAGS =  -O3 -I $(INCLIB) -L $(LDLIB) $(DEFS) $(COMMON) $(LIBSPATH)  -lpthread \
+ -DGLIBC_20 $(DEVELOPMENT_LIBRARY_LINK)
 endif
 
 ifeq ($(platform), x86)
@@ -60,27 +64,29 @@ endif
 #LDLIB += -lrt
 #endif
 
-# Tell the program that the ATIK library is located at this specific location (useful for later testing)
-ATIK_library = -Wl,-rpath=../atik_libraries/$(platform)/
-
 objects = main_snap_pic.o display.o
+
+GUI_FLAG=-DGUI=1
 
 all: test_snap_pic.o
 	mkdir -p bin/$(platform)/
-	$(CC)  -o bin/$(platform)/test_snap_pic.out main_snap_pic.o $(CFLAGS) $(OPENCV) -lASICamera2 $(ATIK_library)
+	$(CC)  -o bin/$(platform)/test_snap_pic.out main_snap_pic.o $(CFLAGS) $(OPENCV) -lASICamera2
 
 test_snap_pic.o:src/main_snap_pic.cpp
 	mkdir -p bin/$(platform)/
-	$(CC)  -c src/main_snap_pic.cpp $(CFLAGS) $(OPENCV) -lASICamera2 $(ATIK_library)
+	$(CC)  -c src/main_snap_pic.cpp $(CFLAGS) $(OPENCV) -lASICamera2
 
-GUI_FLAG = -Dcpp_variable=GUI
-gui: test_snap_pic.o gui.o
+gui: test_snap_pic_gui.o gui.o
 	mkdir -p bin/$(platform)/
-	$(CC) -o bin/$(platform)/gui.out $(objects) $(CFLAGS) $(OPENCV) -lASICamera2 $(ATIK_library)
+	$(CC) -o bin/$(platform)/gui.out $(objects) $(CFLAGS) $(OPENCV) -lASICamera2
+
+test_snap_pic_gui.o:src/main_snap_pic.cpp
+	mkdir -p bin/$(platform)/
+	$(CC)  -c src/main_snap_pic.cpp $(GUI_FLAG) $(CFLAGS) $(OPENCV) -lASICamera2
 
 gui.o:src/display.cpp
 	mkdir -p bin/$(platform)/
-	$(CC)  -c src/display.cpp $(GUI_FLAG) $(CFLAGS) $(OPENCV) -lASICamera2 $(ATIK_library)
+	$(CC)  -c src/display.cpp $(CFLAGS) $(OPENCV) -lASICamera2 $(ATIK_library)
 
 clean:
 	rm -f $(objects)

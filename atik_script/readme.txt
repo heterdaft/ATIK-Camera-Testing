@@ -16,6 +16,10 @@ If libASICamera2.so or (.dylib) can't be found at run time, resolve by below two
 2.Add compile option -Wl,-rpath=<library path>
 
 
+Currently the development library path is built into the created binary. Remove
+or modify "DEVELOPMENT_LIBRARY_LINK" to change this
+
+
 Install opencv2 on ubuntu system with:
 sudo apt-get install libopencv-dev
 
