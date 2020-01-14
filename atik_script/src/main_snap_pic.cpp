@@ -10,8 +10,8 @@
 #include "display.h"
 #endif
 
-const uint HEIGHT = 100;
-const uint WIDTH = 100;
+const uint HEIGHT = 960;
+const uint WIDTH = 1280;
 
 // Initilize the camera and display information about that camera
 int initilize_camera()
@@ -85,20 +85,23 @@ int initilize_camera()
 void setup_camera(int cam_num) {
 	int bin = 1;
 	ASI_IMG_TYPE image_type = ASI_IMG_RAW8;
+	// This call requires width divisible by 8 and height divisible by 2
+	// Also make sure width*height is divisible by 1024
 	if (ASI_SUCCESS == ASISetROIFormat(cam_num, WIDTH, HEIGHT, bin, image_type) )
 		printf("\nSet ROI image format success width:%d height:%d bin:%d image_type:%d \n", WIDTH, HEIGHT, bin, image_type);
 
-	int gain = 0;
+	int gain = 50;
 	if (ASI_SUCCESS == ASISetControlValue(cam_num, ASI_GAIN, gain, ASI_FALSE) )
 		printf("Set gain: %d \n", gain);
 
-	int exp_ms = 10;
-	if (ASI_SUCCESS == ASISetControlValue(cam_num, ASI_EXPOSURE, exp_ms*1000, ASI_FALSE) )
-		printf("Set exposure time(ms): %d \n");
-
+	// For some reason this function must be called before the exposure is set
 	int bandwidth_overload = 40;
 	if (ASI_SUCCESS == ASISetControlValue(cam_num, ASI_BANDWIDTHOVERLOAD, bandwidth_overload, ASI_FALSE) )
-		printf("Set bandwidthoverload: %d \n");
+		printf("Set bandwidthoverload: %d \n", bandwidth_overload);
+
+	int exp_ms = 10;
+	if (ASI_SUCCESS == ASISetControlValue(cam_num, ASI_EXPOSURE, exp_ms*1000, ASI_FALSE) )
+		printf("Set exposure time(ms): %d \n", exp_ms);
 
 }
 
@@ -108,12 +111,43 @@ void start_exposure(int CamNum) {
 
 void wait_until_done(int CamNum, uint sleep_time) {
 	usleep(sleep_time);
-	ASI_EXPOSURE_STATUS status;
-	while(ASIGetExpStatus(CamNum, &status) == ASI_EXP_WORKING) {} // Do nothing
+	ASI_EXPOSURE_STATUS status = ASI_EXP_WORKING;
+	while(status == ASI_EXP_WORKING) {
+		ASIGetExpStatus(CamNum, &status);
+	} // Do nothing
+}
+
+static void dump_hex_data(FILE * f, unsigned char * data, unsigned size)
+{
+    const unsigned MAX_BYTES_PER_LINE = 64;
+    unsigned count = 0;
+
+    for (unsigned i = 0; i < size; ++i)
+    {
+        if (count != 0)
+        {
+            fprintf(f, " ");
+        }
+        fprintf(f, "%02x", data[i]);
+        ++count;
+        if (count == MAX_BYTES_PER_LINE)
+        {
+            fprintf(f, "\n");
+            count = 0;
+        }
+    }
+    if (count != 0)
+    {
+        fprintf(f, "\n");
+        count = 0;
+    }
 }
 
 void get_img(int CamNum, long imgSize, unsigned char* imgBuf) {
-	ASIGetDataAfterExp(CamNum, imgBuf, imgSize);
+	if (ASI_SUCCESS != ASIGetDataAfterExp(CamNum, imgBuf, imgSize) )
+	{
+		printf("There was an error getting the exposure\n");
+	}
 
 	// Save the binary data
 	FILE *fptr;
@@ -121,7 +155,8 @@ void get_img(int CamNum, long imgSize, unsigned char* imgBuf) {
 	if(fptr == NULL) {
 	  printf("Error! Printing binary image\n");
 	} else {
-		fwrite(imgBuf, imgSize, 1, fptr);
+		//fwrite(imgBuf, imgSize, 1, fptr);
+		dump_hex_data(fptr, imgBuf, imgSize);
 	}
 
 	fclose(fptr);

@@ -1,0 +1,295 @@
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0xc0, bRequest = 0xb4, wValue = 0x0000, wIndex =     0, data = 0x7ffcb3374f80, wLength =    1, timeout = 500)
+DATA AFTER CALL:
+01
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0xc0, bRequest = 0xad, wValue = 0x0000, wIndex =     0, data = 0x7ffcb3374f70, wLength =    2, timeout = 500)
+DATA AFTER CALL:
+56 02
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0xc0, bRequest = 0xbc, wValue = 0x001c, wIndex =     0, data = 0x7ffcb3374f8f, wLength =    1, timeout = 500)
+DATA AFTER CALL:
+00
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xbe, wValue = 0x0000, wIndex =     0, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0xc0, bRequest = 0xc3, wValue = 0x0000, wIndex =  1024, data = 0x55fdef784ef0, wLength = 2048, timeout = 500)
+DATA AFTER CALL:
+41 53 49 44 00 00 17 d8 d3 80 00 00 63 20 45 20 00 00 51 02 32 02 26 80 2a 02 00 00 62 08 56 08 bb 20 9d 08 00 00 00 08 88 08 3b 80 9c 02 cc 80 8e 80 00 00 71 02 e3 20 e8 08 1a 80 db 80 00 00
+a0 02 b1 08 c3 80 00 00 b6 20 00 00 71 80 d1 08 72 80 a3 80 e3 08 c4 02 35 80 06 20 6c 02 fd 80 00 00 a4 20 b4 08 47 08 d8 08 8d 02 ed 20 de 08 4f 80 00 00 30 20 a6 02 ba 80 00 00 50 80 70 08
+f8 80 00 00 51 08 cd 02 00 00 84 02 c9 20 0a 80 ca 80 2e 08 00 00 88 08 6b 08 fc 02 4e 80 00 00 e4 20 57 80 3a 20 7d 02 cd 08 00 00 48 08 7c 08 00 00 51 02 04 08 1a 08 ba 80 9b 08 00 00 13 08
+14 08 b9 80 8b 08 ef 02 00 00 75 80 97 08 aa 20 00 00 21 80 51 a0 55 08 68 08 79 08 00 00 71 02 00 00 c3 20 26 20 e8 80 b9 80 fa 20 8e 20 4f 08 00 00 91 80 25 20 9b 20 5d 20 00 00 21 80 bb 80
+00 00 30 20 17 02 4d 08 cd 80 00 00 42 02 82 08 33 08 43 20 b3 20 bc 02 be 80 1f 20 00 00 68 80 be 20 1f 80 00 00 22 80 75 02 a8 20 4d 80 00 00 60 80 56 08 47 20 79 80 bf 08 00 00 b1 08 d1 20
+13 20 43 80 f3 80 4b 02 1d 80 4d 80 00 00 50 20 e5 02 26 20 4a 20 8b 08 cd 20 7e 02 00 00 55 20 f9 08 af 20 00 00 17 80 57 08 89 02 b9 80 1a 80 00 00 a1 08 03 02 b7 08 3e 08 af 20 00 00 72 02
+a3 08 05 08 25 80 99 80 1a 02 ef 80 00 00 da 80 7e 08 00 00 3c 20 1d 80 4e 08 5e 20 6f 02 00 00 d8 08 8d 02 00 00 d1 02 97 20 9a 08 00 00 91 20 73 08 86 08 b6 08 a7 02 df 80 00 00 27 08 00 00
+f3 08 14 02 24 20 55 80 07 80 7b 80 00 00 82 08 f2 20 23 20 76 02 8a 20 eb 80 00 00 82 08 c7 20 58 20 9a 08 cc 08 00 00 f2 08 aa 20 00 00 10 20 e0 02 00 00 04 20 54 80 00 00 70 08 02 02 14 08
+18 02 38 20 00 00 90 20 94 20 00 00 b0 02 f7 20 cf 20 00 00 21 80 51 20 81 20 42 20 39 08 3a 02 7b 20 cd 80 ce 08 af 20 ff 80 00 00 a2 20 6c 08 be 02 00 00 91 80 85 02 00 00 20 80 f0 08 73 08
+94 02 68 80 79 02 fc 20 9e 08 ce 20 8f 02 00 00 00 80 6b 02 bb 20 2f 20 00 00 c2 80 d4 02 85 02 0e 08 00 00 e9 80 ac 80 9d 80 00 00 86 80 c8 02 8f 20 00 00 02 02 b6 20 0d 02 00 00 27 02 00 00
+82 80 b2 08 33 20 0c 20 9d 08 de 02 8f 80 00 00 a0 08 12 08 23 02 b4 08 05 08 d7 02 58 20 7a 80 9a 80 af 08 00 00 42 08 74 08 e6 20 c7 80 00 00 f3 08 14 08 69 08 6b 08 3d 08 ee 80 fe 08 00 00
+e3 08 28 20 48 08 69 02 4d 08 00 00 60 08 00 00 86 20 27 80 d8 02 e8 08 c9 08 db 80 cd 08 00 00 53 80 2b 02 2c 20 ce 08 00 00 d7 20 6e 80 ef 80 00 00 b2 08 84 08 05 08 5e 80 00 00 f1 08 32 02
+a4 80 b8 02 ea 08 1e 02 00 00 a0 08 b1 80 42 08 58 20 3d 08 00 00 00 00 1b 80 de 80 bf 20 00 00 e3 20 06 02 1c 08 0d 08 00 00 10 02 92 80 e9 80 00 00 62 02 a5 20 b7 02 00 00 84 80 25 02 85 02
+f6 20 8b 02 bb 02 cb 08 ff 80 00 00 21 80 a1 08 b3 80 b8 02 cb 20 6e 02 ae 20 4f 02 00 00 30 08 83 02 fe 02 00 00 11 80 9a 08 2b 80 be 02 00 00 21 20 17 80 00 00 00 80 91 20 00 00 e7 02 98 08
+fa 02 00 00 18 20 48 20 7f 02 ef 08 00 00 f3 20 78 80 7e 08 00 00 e5 02 86 02 c7 20 88 20 0b 80 00 00 23 20 33 20 d7 20 da 08 7b 02 ef 02 00 00 3b 02 4e 08 00 00 46 80 58 20 ca 02 9b 80 00 00
+01 02 00 00 20 80 94 20 b4 02 05 80 25 20 6e 02 00 00 73 20 00 00 d5 02 27 02 ad 02 7f 80 00 00 52 20 e9 80 7a 08 00 00 c2 20 a4 80 67 02 2a 08 bb 02 6e 08 af 02 bf 08 00 00 92 80 b4 80 b6 08
+fa 20 00 00 80 02 05 02 66 02 59 08 69 08 00 00 60 80 dc 20 00 00 01 08 31 80 a4 02 16 20 a9 08 00 00 e6 02 59 08 00 00 c0 02 e9 08 dc 02 00 00 00 08 51 02 89 02 bf 20 00 00 57 20 00 00 f0 80
+26 02 a7 02 c8 20 4b 20 00 00 c5 08 a8 02 fb 20 fc 08 0e 20 00 00 10 20 46 80 17 80 0a 20 00 00 d3 08 6a 02 fa 20 00 00 1b 08 8d 02 4f 80 00 00 60 08 45 20 f5 08 5b 02 fe 80 00 00 44 02 b9 02
+00 00 3a 02 00 00 a6 02 c6 80 99 08 db 02 00 00 00 20 49 08 00 00 02 08 b4 08 bb 80 6d 80 7d 80 6e 02 7e 20 00 00 a0 80 52 02 e4 80 78 20 98 02 2b 02 9f 02 00 00 10 80 77 80 de 02 00 00 0d 08
+2e 02 00 00 33 08 4b 02 ae 08 00 00 50 08 96 80 a9 80 5b 80 ed 20 2f 20 00 00 a4 08 a5 20 47 80 77 02 9c 02 1d 80 6d 20 00 00 42 20 35 80 96 08 b6 80 3b 80 00 00 11 20 89 02 9b 20 00 00 a6 20
+b7 80 de 08 00 00 bd 20 00 00 74 20 47 08 39 08 cb 02 2c 80 00 00 80 02 d3 80 1b 20 bf 02 00 00 3a 20 6e 80 00 00 c9 80 0a 20 ef 80 00 00 c0 08 ed 20 6f 02 00 00 ab 80 df 02 00 00 56 20 9e 02
+00 00 13 08 a7 20 bc 80 00 00 22 80 f2 02 1b 02 00 00 b4 20 56 02 ac 08 00 00 c0 22 74 08 a9 08 4a 80 bf 08 00 00 32 80 34 20 a6 80 00 00 e0 80 48 80 00 00 80 20 f2 08 63 02 04 02 54 02 05 80
+a8 02 d8 80 9c 80 dc 80 ed 80 fe 80 ef 80 00 00 f3 20 b9 80 4b 20 bc 80 00 00 21 20 96 08 da 20 ce 80 00 00 c0 80 b9 02 00 00 c5 08 3d 02 2f 08 00 00 52 80 46 80 8d 20 00 00 45 02 85 80 26 02
+f7 80 3e 02 00 00 14 80 ed 80 00 00 51 08 96 02 fa 80 5f 02 00 00 d8 a0 ba 20 5b 02 7e 08 00 00 e5 08 f7 08 ad 20 00 00 82 02 46 08 6e 08 0f 80 00 00 91 08 93 20 0e 02 00 00 76 02 8b 20 bb 20
+cd 80 0e 08 9f 02 00 00 87 02 97 20 ac 20 ec 80 1e 20 ae 02 00 00 83 20 44 20 76 20 f8 02 fb 80 00 00 42 80 e4 02 28 80 db 20 1e 80 3e 80 00 00 a1 08 c2 80 e5 02 76 20 f9 20 3d 02 fd 02 00 00
+11 20 16 20 00 00 00 00 22 80 5d 08 00 00 a5 08 d6 02 00 00 20 02 44 08 05 80 99 08 ac 08 00 00 61 08 52 02 82 20 23 08 76 80 bd 08 00 00 55 08 d8 02 ba 02 00 00 b1 80 17 80 3b 08 cd 02 00 00
+7b 02 5c 08 00 00 45 20 b5 80 46 08 09 20 5e 02 00 00 95 80 f8 20 00 00 c0 02 92 02 b6 08 8d 02 cd 80 00 00 c1 80 85 02 87 20 f7 80 29 02 9d 08 00 00 60 80 c0 02 c4 20 c9 02 5a 80 00 00 20 08
+01 80 e2 08 cc 08 2e 02 00 00 b4 08 d7 80 00 00 22 80 43 08 00 00 85 02 1c 20 00 00 f3 80 29 08 69 20 6c 08 6f 02 00 00 01 08 34 20 89 80 1b 02 9e 02 00 00 95 80 fe 20 00 00 41 02 42 20 33 02
+58 20 aa 80 ab 80 00 00 79 08 7f 08 00 00 a4 08 ae 80 8f 02 00 00 b1 02 32 20 57 08 1a 20 1c 08 ee 20 00 00 e4 08 00 00 81 02 f1 80 14 08 57 08 99 80 00 00 a1 08 a6 20 a9 80 8a 08 cc 08 00 00
+00 80 60 20 01 80 72 08 ba 20 fc 80 00 00 13 20 56 08 e6 08 3c 80 ff 80 00 00 90 02 32 20 fe 80 00 00 53 22 d8 80 d9 02 aa 20 4d 80 00 00 00 20 66 02 b6 20 f7 20 7b 08 9b 02 cb 08 8f 08 00 00
+a0 08 c0 02 08 08 68 02 9a 80 0c 02 2f 02 00 00 71 08 32 08 33 02 a6 08 8d 02 00 00 60 20 51 08 71 80 d5 08 56 20 77 02 5a 80 fd 02 00 00 52 08 87 02 3a 20 2d 02 2e 20 4e 08 00 00 60 20 45 08
+a6 08 29 02 69 08 dc 80 7e 08 df 80 00 00 80 80 bd 02 00 00 c3 80 be 08 00 00 00 00 79 08 7a 08 ae 08 00 00 d8 20 1f 20 00 00 64 08 4a 02 0c 80 00 00 f0 20 74 08 e6 02 f8 02 8c 02 4f 20 00 00
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0xc0, bRequest = 0xc3, wValue = 0x0000, wIndex =  1032, data = 0x55fdef78a190, wLength = 2048, timeout = 500)
+DATA AFTER CALL:
+23 02 64 20 fb 08 2e 02 00 00 23 02 24 80 47 20 00 00 e6 80 00 00 01 08 81 02 02 20 e3 08 77 80 cb 08 9c 80 ef 08 00 00 00 00 50 08 f0 02 f2 02 1a 80 00 00 d0 02 23 80 87 08 7f 02 00 00 90 20
+64 80 75 08 a7 02 ee 02 6f 20 00 00 f0 02 66 20 29 02 00 00 d8 02 6c 20 ec 20 4d 80 00 00 16 80 8d 80 4e 80 7e 80 00 00 d0 08 67 80 f7 08 1a 20 6a 02 9e 02 00 00 d1 08 44 20 f4 08 36 08 76 80
+c6 80 07 80 8e 80 00 00 d3 20 04 02 56 02 66 80 00 00 04 80 85 80 c6 80 19 80 fe 08 00 00 24 02 16 80 76 20 a7 20 9d 20 00 00 f2 20 59 02 aa 02 fb 20 ee 20 ff 02 00 00 82 20 b2 02 63 08 29 80
+8c 08 5d 02 bd 80 00 00 20 20 57 20 77 20 f9 80 2f 20 ff 08 00 00 73 08 e8 80 00 00 61 08 3a 20 00 00 22 80 0d 08 9e 08 00 00 80 20 b3 02 26 80 97 08 f9 08 7c 08 bc 20 00 00 91 02 29 20 3c 02
+00 00 30 80 2d 20 0f 80 00 00 63 20 b6 08 00 00 d8 08 bb 20 4e 80 fe 20 00 00 64 80 9e 08 00 00 11 02 69 80 9a 80 0c 20 3d 20 00 00 d2 08 64 02 d4 02 e4 02 95 20 18 02 2c 08 2e 02 9e 80 7f 02
+00 00 c4 08 c6 02 5b 20 1e 02 4e 08 df 80 00 00 29 20 ee 20 00 00 21 80 16 08 ea 80 9b 02 00 00 00 00 c3 08 1a 20 ba 02 ad 80 2f 80 00 00 85 20 69 08 00 00 24 80 35 02 aa 02 1d 20 6e 20 00 00
+b4 02 f5 80 5f 80 cf 02 00 00 9c 02 00 00 e0 20 31 08 f5 80 88 08 00 00 63 20 2f 08 9f 02 00 00 06 08 a7 80 f7 80 0a 20 aa 08 00 00 d1 02 76 80 57 20 87 20 b9 20 c9 02 3c 02 2e 80 4f 80 00 00
+12 02 49 08 00 00 b0 08 54 02 94 80 bf 02 00 00 b6 80 d6 02 89 02 bd 02 0e 02 00 00 f0 80 02 08 52 20 c2 02 a3 08 07 08 8a 20 8c 02 00 00 c8 02 9d 80 00 00 a2 08 15 08 ad 02 00 00 51 20 63 80
+0b 80 bd 02 00 00 d0 80 64 08 fa 02 5d 02 0e 02 00 00 c0 02 66 80 f6 02 bd 02 cd 02 00 00 11 02 71 08 47 08 4b 08 8c 20 00 00 d9 20 6a 08 ab 08 00 00 b0 08 c3 08 e3 80 68 08 a8 08 2e 02 af 80
+00 00 46 08 87 02 d8 02 09 02 9c 80 00 00 c0 80 84 08 e4 02 28 08 ec 08 00 00 00 08 24 80 d5 02 67 02 00 00 56 02 86 02 c7 08 0c 08 00 00 c4 80 d7 02 6a 02 5d 02 00 00 85 20 a7 08 28 02 cd 80
+00 00 92 02 b7 20 38 80 00 00 02 80 b2 08 95 08 66 08 09 02 be 02 00 00 b0 80 d5 02 58 20 c9 20 3a 08 8a 08 9a 02 1c 80 00 00 f1 80 b3 20 86 80 08 02 8e 20 00 00 03 02 4a 08 00 00 20 02 84 20
+b5 08 d5 20 27 08 3a 02 7e 20 00 00 13 02 07 80 aa 08 eb 02 ae 80 00 00 fa 80 00 00 b1 20 72 20 a5 08 d8 02 1e 20 00 00 42 80 72 20 44 20 a4 80 89 02 4c 02 00 00 53 08 34 02 27 80 28 08 da 20
+00 00 40 02 53 80 16 20 ab 20 8e 02 00 00 45 20 00 00 30 08 89 80 00 00 52 02 15 08 5f 08 00 00 52 80 ca 02 fd 08 00 00 03 02 d4 80 76 80 fb 80 8e 02 1f 08 00 00 03 08 b8 08 f8 02 cd 02 00 00
+d0 02 74 20 85 20 b5 08 78 80 89 80 7b 80 9d 02 00 00 86 08 97 20 28 80 19 08 3b 80 00 00 40 20 93 80 24 80 7b 20 ed 02 00 00 86 02 97 80 2c 08 00 00 dd 20 00 00 08 20 58 80 2a 20 5d 20 4e 80
+5f 08 00 00 87 08 78 02 ca 80 bd 02 5e 80 00 00 65 02 96 08 5b 08 00 00 30 08 70 08 e1 02 c3 02 c6 08 08 20 7b 20 bb 80 de 80 00 00 87 08 6b 20 eb 08 00 00 10 20 f1 80 23 80 d8 80 f8 02 4d 08
+7d 20 5e 08 df 80 00 00 d3 20 b4 80 c6 20 be 80 00 00 d2 20 03 80 b3 02 08 20 ec 80 00 00 97 02 bc 08 00 00 f2 20 64 02 65 02 ea 20 6b 80 4d 08 00 00 61 08 b5 20 bb 02 00 00 60 20 e1 80 b2 80
+75 04 79 80 fc 20 bd 08 00 00 10 02 b0 80 15 08 75 80 f6 80 0b 20 8c 08 00 00 83 02 7c 20 5f 20 00 00 23 80 88 80 ac 20 00 00 b2 80 36 20 e8 20 0a 80 00 00 d3 02 35 08 de 80 00 00 2b 80 7c 02
+de 08 00 00 78 80 6b 08 de 08 00 00 98 08 ea 08 00 00 82 20 87 20 00 00 61 80 48 80 ff 80 00 00 96 02 b6 20 0a 08 0b 02 4b 02 00 00 10 08 e3 08 74 08 00 00 e0 02 44 02 85 20 00 00 c4 80 58 80
+5e 20 af 80 cf 02 00 00 c0 20 01 08 a2 08 d2 08 a9 80 3a 80 8a 20 7b 02 00 00 52 08 43 08 fa 02 3b 08 9e 80 00 00 34 20 a7 02 00 00 30 08 c2 80 fd 80 00 00 70 20 e5 08 a8 80 c8 20 8d 20 dd 20
+00 00 35 20 a7 08 3c 08 00 00 11 08 52 80 48 08 4b 80 2c 08 af 08 00 00 03 02 c3 02 45 80 c6 20 49 80 eb 08 ac 20 00 00 52 02 82 08 a2 08 04 80 00 00 f2 08 13 80 b7 20 0e 80 00 00 86 22 c6 02
+b9 80 9e 80 00 00 88 02 0b 08 00 00 f2 20 e3 08 e4 08 58 80 69 08 00 00 22 20 a4 08 5c 02 7c 08 3d 20 00 00 61 20 65 20 2c 80 8e 20 00 00 44 20 57 a0 5b 20 7b 02 00 00 31 08 07 80 49 02 7f 02
+00 00 50 80 83 80 39 08 79 02 ca 20 9c 80 5d 02 1e 80 00 00 15 02 a8 08 99 08 3d 08 9e 02 00 00 d1 02 e4 20 dd 02 1f 20 00 00 b6 20 00 00 a0 20 b4 20 78 20 6a 02 fb 80 6e 08 00 00 32 20 a8 80
+fa 02 8b 02 bc 02 4d 20 fe 80 00 00 d1 08 d4 80 48 80 c8 08 f8 20 aa 20 da 02 4c 20 1e 02 00 00 da 08 00 00 43 08 b4 80 66 20 37 08 67 80 1e 20 00 00 df 02 00 00 f8 08 cc 08 00 00 b3 88 1a 08
+00 00 a1 02 c5 02 18 02 38 20 1d 20 9f 02 00 00 0f 20 00 00 15 20 e9 20 2e 02 00 00 a7 80 d7 02 b9 02 8e 08 00 00 d3 80 eb 02 fc 80 00 00 a6 08 4c 02 6f 80 00 00 f2 20 a5 80 87 80 88 02 c8 08
+8a 80 ae 02 7f 08 00 00 22 08 13 20 00 00 50 80 21 02 73 08 00 00 20 20 b2 02 b3 08 f4 80 d9 80 ec 02 6e 08 00 00 46 20 9a 08 fd 08 2e 02 00 00 90 08 41 80 32 20 b4 20 55 08 c5 80 00 00 05 08
+1a 20 1c 08 4d 08 ad 02 ef 08 00 00 24 02 3c 08 00 00 29 80 5e 08 00 00 70 20 04 20 b9 02 da 08 7d 02 00 00 72 08 8a 02 ef 80 ff 08 00 00 10 08 20 20 48 08 00 00 24 08 26 02 39 08 2d 80 6f 02
+00 00 27 08 00 00 80 80 16 02 39 20 9f 02 00 00 81 08 b3 02 46 02 ed 08 00 00 33 08 36 08 18 80 af 20 00 00 41 80 c1 08 42 02 33 02 98 02 5e 02 00 00 32 02 4c 20 0d 08 00 00 f3 02 e4 08 5a 02
+00 00 f9 02 7d 20 00 00 e2 20 3c 20 7f 20 00 00 f0 08 eb 08 ae 20 00 00 f3 80 d6 20 00 00 77 08 2a 80 bc 02 fd 02 7e 20 00 00 a3 08 3f 20 00 00 57 08 fa 02 5e 02 7e 08 00 00 03 80 e4 02 85 08
+f5 08 d9 02 2b 20 ce 02 00 00 41 80 e1 08 fc 80 fd 80 00 00 16 20 a6 20 9d 80 00 00 51 80 15 08 b6 08 97 20 1e 80 00 00 86 20 bb 80 00 00 15 80 b5 80 f8 02 3a 08 5c 08 00 00 51 80 45 20 c6 02
+de 02 2f 02 00 00 f2 08 d4 08 0b 08 00 00 e3 02 77 80 d7 20 00 00 c0 80 63 80 f8 02 bb 80 4d 02 00 00 01 80 2c 20 ad 08 ef 08 00 00 a5 80 c6 80 4a 02 2b 02 00 00 71 02 00 00 d0 80 00 00 50 80
+24 02 85 02 07 08 00 00 e1 20 6a 80 00 00 31 02 53 08 44 80 7a 20 6b 08 6c 08 00 00 03 02 e7 02 00 00 41 80 c4 02 e4 20 25 08 89 02 bb 08 7f 08 00 00 a1 80 96 08 00 00 30 20 b1 20 14 80 46 80
+19 20 49 20 1c 08 3d 08 00 00 03 08 83 80 09 02 8f 08 00 00 c0 08 06 02 86 80 a9 08 00 00 a1 02 c1 08 87 20 bc 80 00 00 80 02 44 20 86 80 00 00 88 20 d9 20 5d 02 ce 02 00 00 d4 08 6a 02 db 80
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0xc0, bRequest = 0xc3, wValue = 0x0000, wIndex =  1040, data = 0x55fdef78a990, wLength = 2048, timeout = 500)
+DATA AFTER CALL:
+00 00 b2 08 c3 08 36 02 00 00 13 08 64 80 1e 02 0f 20 00 00 c2 80 5a 08 5f 08 00 00 51 20 c1 80 b5 02 06 20 16 20 d7 02 00 00 91 20 86 80 0e 02 00 00 c3 20 e4 20 16 02 38 08 4b 80 00 00 41 02
+b3 20 05 20 28 08 09 02 6b 20 9c 80 00 00 43 08 cb 20 00 00 d5 02 d8 08 3d 80 2f 08 8f 02 00 00 54 80 15 02 49 80 8a 02 00 00 19 20 db 02 00 00 c1 08 72 20 c4 20 8a 20 0c 20 0e 20 00 00 12 20
+44 02 55 80 a6 80 48 80 0c 80 00 00 de 80 00 00 20 20 b0 02 e2 20 d6 02 4f 80 00 00 95 20 76 80 f9 80 00 00 91 20 e4 20 00 00 00 08 12 02 d3 08 17 80 4d 02 4e 02 00 00 d0 02 15 08 99 02 ce 08
+2f 80 00 00 e0 02 00 00 a4 02 d5 80 59 20 00 00 92 02 c4 08 49 20 6e 02 ff 80 00 00 81 08 32 08 46 80 59 08 3a 02 2e 20 00 00 63 02 84 80 7c 20 6d 02 ad 02 9f 08 00 00 16 02 5f 02 00 00 c1 02
+f5 08 67 08 a7 80 e7 80 ac 20 00 00 f9 02 1a 80 7e 20 9e 08 00 00 e2 08 43 80 de 20 00 00 20 20 35 02 46 08 7d 08 00 00 b2 20 e9 20 ca 02 5c 80 8c 80 5d 20 00 00 84 08 26 08 f8 20 9b 20 1f 80
+00 00 61 02 43 80 6f 02 00 00 51 80 68 02 29 08 9a 20 9c 02 00 00 90 02 62 08 f9 20 6a 20 00 00 00 08 59 08 9b 20 4c 80 00 00 f3 08 b7 08 39 20 4d 08 00 00 b4 02 f5 80 96 08 a6 80 00 00 b2 08
+fd 02 ce 80 ee 08 00 00 27 20 00 00 61 80 66 80 00 00 90 80 64 80 00 00 67 02 38 02 0e 80 00 00 00 00 51 08 00 00 e4 02 86 02 cd 08 00 00 f1 20 94 08 26 20 eb 02 00 00 39 02 ea 20 db 02 00 00
+30 20 36 02 76 08 5f 22 00 00 76 80 57 80 fc 20 1d 80 ee 08 00 00 33 20 34 80 26 80 5b 08 3d 02 8e 20 00 00 c0 08 a2 02 dc 02 0e 20 7f 80 00 00 26 80 d7 08 5a 80 00 00 e1 08 f4 80 a7 02 78 20
+db 02 7c 02 00 00 83 20 7e 08 00 00 56 02 ea 20 2d 08 ce 08 00 00 f0 08 d6 20 00 00 80 08 d1 02 33 80 a3 08 04 02 34 02 c5 08 96 02 29 02 6e 08 00 00 32 20 e5 80 47 80 00 00 53 80 2a 02 9e 20
+00 00 93 08 f6 08 29 08 6c 02 fd 20 00 00 00 80 99 20 8b 08 bc 20 8e 08 ee 20 00 00 c1 08 44 80 00 00 21 20 96 08 a8 02 39 08 8c 20 3d 20 6e 80 be 08 00 00 85 20 06 20 1b 08 5e 20 00 00 82 08
+b5 08 68 80 ff 80 00 00 80 08 84 08 a4 02 c8 80 1a 08 4c 80 4f 08 00 00 60 08 42 02 35 08 eb 80 00 00 a2 02 75 80 8c 80 00 00 13 02 25 02 48 80 78 02 00 00 91 20 a1 02 32 02 e7 08 d8 08 bb 80
+4d 08 00 00 06 80 ad 02 4e 08 00 00 90 08 d3 80 e3 02 75 20 00 00 b0 08 51 80 02 80 63 08 49 80 59 08 0f 20 2f 08 00 00 24 20 c9 20 fb 20 ad 02 00 00 94 80 e5 20 ca 02 8c 80 cc 08 bf 08 00 00
+90 20 a2 80 c2 08 25 08 8e 02 bf 20 00 00 54 20 06 08 19 02 69 80 7b 08 0c 20 00 00 c0 80 b5 80 77 20 5d 20 00 00 9d 80 de 02 00 00 94 02 00 00 00 00 43 80 d3 80 b7 08 fb 02 00 00 22 08 b7 80
+48 80 f8 02 2a 80 2d 08 00 00 35 08 d6 08 98 02 0c 20 7d 20 ed 20 2f 08 00 00 3b 20 fe 80 00 00 b0 20 d0 08 52 20 d7 08 cc 08 fd 80 5f 80 00 00 13 02 c6 08 87 20 08 02 fb 02 cc 08 00 00 88 20
+7e 08 00 00 23 80 16 02 ea 20 ac 20 1d 02 ed 80 00 00 a0 08 84 20 56 08 77 20 da 80 ab 08 ac 20 7e 80 ae 80 00 00 44 02 00 00 62 80 00 00 49 80 4a 08 5e 20 00 00 b9 80 3d 80 4f 20 00 00 f0 80
+58 02 ac 08 00 00 c2 80 14 02 0e 20 00 00 90 20 25 80 6d 80 ee 08 00 00 66 80 a7 80 ea 08 fa 08 bf 02 00 00 15 02 46 08 88 80 a9 02 6a 08 ae 02 00 00 4b 08 ed 08 8e 80 6f 02 00 00 e1 20 a2 80
+00 00 a3 02 44 02 06 80 e9 08 cc 02 00 00 63 08 04 20 98 80 8b 20 9d 02 00 00 36 08 18 02 8a 20 6f 20 00 00 13 80 c3 02 36 20 6d 02 00 00 e2 80 d9 20 fa 02 00 00 84 02 f4 80 35 80 00 00 00 80
+c2 02 98 08 dd 80 ae 08 1f 02 00 00 b1 20 02 02 04 08 44 08 b4 08 00 00 d0 08 93 20 e4 08 c8 08 3e 20 00 00 03 02 33 20 b3 02 97 10 db 20 8c 08 1e 08 00 00 60 80 95 80 4a 02 da 20 2c 20 bc 80
+00 00 b3 08 94 80 19 20 b9 20 3b 02 00 00 2f 20 00 00 2e 80 0f 08 00 00 d1 20 68 02 98 80 99 08 00 00 15 08 27 08 1a 80 ed 80 0e 80 00 00 38 08 9d 20 9e 08 00 00 15 80 25 20 2a 02 6a 08 9b 80
+00 00 c2 08 ce 08 bf 80 00 00 81 02 48 80 00 00 00 00 51 20 d1 02 95 20 b5 02 e6 02 47 80 ec 20 00 00 a4 80 e5 20 1a 08 5b 20 af 08 00 00 16 02 47 08 5f 02 00 00 c8 20 7a 20 bd 80 af 80 00 00
+e2 80 f3 20 49 08 6c 02 00 00 71 20 b2 20 25 08 00 00 e2 20 9e 08 00 00 e0 20 13 02 26 02 3a 08 bd 08 00 00 02 08 52 08 a3 08 67 80 f7 08 c9 08 6a 80 8c 08 00 00 f4 08 0a 08 3b 20 6e 02 2f 20
+00 00 44 20 9d 08 00 00 10 08 f2 80 a3 20 b3 02 07 08 00 00 d6 02 08 08 af 02 ff 08 00 00 24 08 ab 20 6c 02 df 80 00 00 92 02 53 08 93 20 00 00 81 80 f2 80 f4 20 29 80 69 80 e9 08 0a 08 7c 02
+00 00 c0 20 af 80 00 00 35 08 2a 80 8c 02 bc 02 00 00 63 08 34 02 ea 20 1c 80 00 00 c6 80 e7 20 28 20 98 80 6d 80 00 00 61 08 d4 02 fd 02 00 00 42 80 56 02 d8 80 19 80 eb 20 5c 80 00 00 d5 80
+d7 20 00 00 70 08 6a 08 4c 02 fd 80 00 00 50 80 a4 80 65 80 86 20 dc 80 00 00 01 20 98 20 1e 02 00 00 a0 20 11 02 23 20 46 20 1c 02 6e 02 5f 02 00 00 a0 08 25 08 9c 02 bc 20 6e 20 00 00 7c 08
+00 00 e1 20 23 02 04 08 00 00 a2 80 54 80 b6 20 67 08 e7 02 ee 20 00 00 a5 20 fc 08 00 00 22 20 68 80 39 02 8f 20 00 00 70 08 d5 20 76 20 ea 80 ce 02 00 00 a2 80 f8 02 8d 08 00 00 5c 80 5f 08
+00 00 b4 80 00 00 e1 20 c4 20 07 80 59 08 00 00 88 02 6d 08 2f 08 9f 08 00 00 b4 02 e8 80 8a 08 7c 02 00 00 11 08 74 02 d4 20 28 02 5b 08 5d 80 00 00 70 08 95 02 28 80 00 00 c4 20 bd 20 8e 08
+00 00 f3 02 a5 08 47 20 ee 20 00 00 51 08 71 02 33 80 00 00 e2 20 06 02 96 08 dd 20 4e 80 00 00 85 80 2a 80 eb 02 2c 08 00 00 b2 20 b3 80 97 02 2b 02 1e 02 00 00 b1 08 a6 02 00 00 f2 20 86 20
+b8 80 ea 08 3d 20 fd 20 00 00 50 02 a6 08 87 08 b7 02 9e 08 00 00 8f 20 00 00 41 80 a2 08 73 08 0a 80 00 00 71 08 e3 80 ae 02 00 00 01 02 13 02 4b 80 00 00 41 02 f5 20 97 80 d7 02 ea 20 9b 02
+00 00 36 08 67 20 aa 20 bd 20 00 00 c1 02 6a 08 0f 40 00 00 00 80 a0 80 51 80 7b 80 bf 80 00 00 87 80 bf 08 00 00 00 00 4a 80 4b 02 8c 80 3e 02 00 00 83 02 65 20 36 08 66 20 fa 80 7d 02 ef 80
+00 00 c7 20 48 02 a8 08 0d 08 fd 20 00 00 43 30 a4 02 c4 80 16 08 00 00 82 08 e5 80 6a 20 2e 20 8e 08 00 00 53 02 26 08 0c 20 6d 08 00 00 63 08 04 02 1a 20 7e 08 de 80 7f 08 00 00 c0 20 00 00
+33 80 c4 80 d4 08 47 20 a7 02 9b 20 cc 80 0f 08 00 00 21 20 46 20 67 02 0a 02 00 00 78 08 ed 20 ef 02 00 00 e1 08 05 80 5b 08 cc 80 00 00 61 20 84 80 05 02 a8 20 0a 20 db 20 00 00 a1 80 e1 20
+f1 80 e5 08 c8 80 00 00 74 02 ac 08 9d 80 3e 80 00 00 a1 20 28 80 2a 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xbe, wValue = 0x0001, wIndex =     0, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xaa, wValue = 0x0000, wIndex =     0, data =          (nil), wLength =    0, timeout = 200)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x301a, wIndex =     1, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3088, wIndex = 32768, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =   549, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex = 20560, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex = 11558, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  2088, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  3351, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  2342, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =    40, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  1318, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex = 42792, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  1829, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex = 32896, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex = 10519, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  1317, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =    64, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  9986, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  5654, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  9990, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  5942, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  9894, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  5891, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  9892, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  5919, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex = 10245, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  9760, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex = 10244, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  9504, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  8231, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =    23, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  7717, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =    32, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  8471, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  4136, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  1307, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  5891, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  9990, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  5891, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  5959, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  9824, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  6062, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  9472, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex = 36903, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =    38, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  6184, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =    46, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex = 10792, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  2078, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  2097, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  5184, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex = 16404, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  8224, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  5136, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  4148, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  5120, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  4116, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =    32, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  5120, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex = 16403, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  6146, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  5232, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex = 28676, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  5232, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex = 28675, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  5232, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex = 28695, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  8194, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  5120, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  8194, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  5120, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex = 20484, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  5120, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  8196, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =  5120, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex = 20514, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =   788, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =    32, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =   788, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex =    80, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex = 11308, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3086, wIndex = 11308, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x309e, wIndex =     0, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x301a, wIndex =  4312, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3082, wIndex =    41, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x301e, wIndex =     0, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3eda, wIndex =  3843, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3ede, wIndex = 49157, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3ed8, wIndex =  2543, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3ee2, wIndex = 42091, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3ee0, wIndex =  1149, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3edc, wIndex =   112, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3044, wIndex =  1028, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3ee6, wIndex = 33539, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3ee4, wIndex = 54024, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3ed6, wIndex =   189, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3ee6, wIndex = 33539, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x30e4, wIndex = 25458, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x30e2, wIndex = 29267, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x30e0, wIndex = 21616, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x30e6, wIndex = 50380, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x30e8, wIndex = 32848, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x30b0, wIndex = 21248, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x30d4, wIndex = 57351, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x30ba, wIndex =     8, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x301a, wIndex =  4316, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x301a, wIndex =  4312, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3012, wIndex =    10, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x30b0, wIndex = 21248, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3064, wIndex =  6146, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x31e0, wIndex =     3, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x30b4, wIndex =    17, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3100, wIndex =     0, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0xc0, bRequest = 0xa7, wValue = 0x30c8, wIndex =     0, data = 0x7ffcb3374f60, wLength =    2, timeout = 500)
+DATA AFTER CALL:
+89 ef
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0xc0, bRequest = 0xa7, wValue = 0x30b2, wIndex =     0, data = 0x7ffcb3374f60, wLength =    2, timeout = 500)
+DATA AFTER CALL:
+01 91
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x305a, wIndex =    34, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3058, wIndex =    62, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x301e, wIndex =     0, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3012, wIndex =   248, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x301a, wIndex =  4314, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x302c, wIndex =     1, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x302a, wIndex =     4, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x302e, wIndex =     6, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3030, wIndex =    41, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x301a, wIndex =  4316, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x300c, wIndex =  3650, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3012, wIndex =   112, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x300c, wIndex =  3650, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3012, wIndex =   112, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x30b0, wIndex =  4912, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3056, wIndex =    36, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x305c, wIndex =    36, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x305a, wIndex =    34, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3058, wIndex =    62, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3012, wIndex =   112, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3002, wIndex =     2, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3004, wIndex =     0, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3006, wIndex =   961, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3008, wIndex =  1279, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xab, wValue = 0x0000, wIndex =     0, data =          (nil), wLength =    0, timeout = 200)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xb5, wValue = 0x0000, wIndex =    25, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x300c, wIndex =  3650, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3012, wIndex =   112, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x300a, wIndex =   986, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3002, wIndex =   430, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3004, wIndex =   588, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3006, wIndex =   533, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3008, wIndex =   691, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xab, wValue = 0x0000, wIndex =     0, data =          (nil), wLength =    0, timeout = 200)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xb5, wValue = 0x0000, wIndex =     1, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x300c, wIndex =  1390, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3012, wIndex =   294, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x300a, wIndex =   130, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x30b0, wIndex =  4912, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3056, wIndex =   136, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x305c, wIndex =   136, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x305a, wIndex =   128, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3058, wIndex =   234, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x300c, wIndex =  1390, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3012, wIndex =   294, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0xc0, bRequest = 0xa7, wValue = 0x30b0, wIndex =     0, data = 0x7ffcb3374dd0, wLength =    2, timeout = 500)
+DATA AFTER CALL:
+13 30
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x301a, wIndex =  4312, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x30b0, wIndex = 21296, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x301a, wIndex =  4316, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956200168704] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x3012, wIndex =  1726, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956145194752] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xaa, wValue = 0x0000, wIndex =     0, data =          (nil), wLength =    0, timeout = 200)
+[libUSB/139956145194752] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x301a, wIndex =  4312, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956145194752] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xaf, wValue = 0x0000, wIndex =     0, data =          (nil), wLength =    0, timeout = 200)
+[libUSB/139956145194752] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa9, wValue = 0x0000, wIndex =     0, data =          (nil), wLength =    0, timeout = 200)
+[libUSB/139956145194752] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x301a, wIndex =  4316, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956145194752] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0xc0, bRequest = 0xa7, wValue = 0x301a, wIndex =     0, data = 0x7f4a14517de0, wLength =    2, timeout = 500)
+DATA AFTER CALL:
+10 dc
+[libUSB/139956145194752] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x301a, wIndex =  4318, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956145194752] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xa6, wValue = 0x301a, wIndex =  4312, data =          (nil), wLength =    0, timeout = 500)
+[libUSB/139956145194752] libusb_control_transfer(dev = 0x55fdef791b70, bmRequestType = 0x40, bRequest = 0xaa, wValue = 0x0000, wIndex =     0, data =          (nil), wLength =    0, timeout = 200)
